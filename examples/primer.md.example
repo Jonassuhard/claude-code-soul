@@ -1,0 +1,73 @@
+# primer.md — exemple (Marie, lead UX designer)
+
+> Exemple de primer.md pour montrer la convention de tagging.
+> Limite stricte : 200 lignes max. Si tu dépasses, externalise dans `~/.claude/primer-details/<sujet>.md`.
+
+# Active Session — 2026-06-08 — Refonte landing page "Pricing" + audit Lighthouse mobile
+
+## Refonte landing /pricing [PROJET ACTIF]
+
+- V3 mergée en preview Vercel `pricing-v3-abc123.vercel.app`. Tests internes OK.
+- 3 décisions à acter avec PM avant push prod :
+  1. Section "compare" : table vs cards ? (Marie penche cards, simon table)
+  2. CTA principal : "Try free" vs "Book a demo" ? A/B 50/50 sur 2 semaines proposé.
+  3. Trust signals : 3 logos clients ou 6 ? (3 si on garde au-dessus du fold)
+- Mobile Lighthouse 67 → cible 88. Cause LCP : 1 image héro non `priority`. Fix prévu commit suivant.
+
+---
+
+# Active Session — 2026-06-06 — Design system v2 (tokens migration)
+
+## Design tokens v2 [PROJET ACTIF]
+
+- Migration `design-tokens.json` → `tokens.json` format Style Dictionary
+- 4 équipes consommatrices : Web (Marie), iOS (Tom), Android (Lea), Marketing (Sandrine)
+- Breaking changes documentés dans `CHANGELOG.md` v2.0.0-rc1
+- Rollout prévu : Web d'abord (cette semaine), mobile 2 semaines après
+- Backward-compat alias gardés 1 mois pour transition
+
+---
+
+# AGENDA CRITIQUE [DEADLINE J-XX] [RÉFLEXE PERMANENT]
+
+| Date | J- | Échéance |
+|---|---|---|
+| ven. 13/06 | J-5 | Présentation roadmap design Q3 (CEO + Head of Product) |
+| jeu. 26/06 | J-18 | DesignOps Summit Paris (intervention 20 min) |
+| sept. 2026 | J-90 | Sortie public design system v2.0.0 stable |
+
+Actions critiques :
+1. Préparer slides roadmap Q3 avant 11/06 (J-7)
+2. Répétition pitch DesignOps Summit avec PM
+3. Audit accessibilité automatisé avant freeze v2.0.0
+
+---
+
+# Stack actuelle (08/06/2026) [RÉFLEXE PERMANENT]
+
+| Brique | Outil | État |
+|---|---|---|
+| Design | Figma Pro Team + Variables | ✅ |
+| Dev frontend | Next.js 15.3 + React 19 + Tailwind 4 | ✅ |
+| Component lib | shadcn/ui (custom theme) + Storybook 8 | ✅ |
+| Tokens | Style Dictionary 4 → JSON/CSS/Swift/Kotlin | 🟡 migration |
+| Tests | Playwright E2E + Chromatic visual regression | ✅ |
+| Deploy | Vercel (preview + prod) + GitHub Actions | ✅ |
+| Analytics | PostHog (events) + Vercel Analytics (perf) | ✅ |
+
+---
+
+# Pointeurs projets actifs [RÉFLEXE PERMANENT]
+
+| Projet | Path | État |
+|---|---|---|
+| App principale | `~/Projects/app/CLAUDE.md` | sprint en cours |
+| Design system v2 | `~/Projects/design-system/CLAUDE.md` | migration |
+| Site marketing | `~/Projects/marketing-site/CLAUDE.md` | refonte /pricing |
+| Storybook | `~/Projects/storybook/CLAUDE.md` | maintenance |
+
+---
+
+# Notes — historique session 06/06 archivé
+
+Détails sprint design system v2 (semaine 23) externalisés : `~/.claude/primer-details/ds-v2-week23.md`.

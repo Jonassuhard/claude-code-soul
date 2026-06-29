@@ -1,0 +1,58 @@
+# ===== Secrets =====
+.env
+.env.local
+.env.*.local
+secrets/
+*.secret
+
+# ===== Backups & temp =====
+*.bak
+*.bak-*
+*~
+.DS_Store
+*.swp
+*.swo
+*.tmp
+
+# ===== Private workspace (NEVER commit) =====
+_PRIVATE/
+_inventory/
+_research/
+
+# ===== Logs =====
+*.log
+token-usage.log
+mcp-cleanup.log
+.guard-audit.log
+
+# ===== Native binaries (compilation outputs) =====
+*.o
+*.dSYM/
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.iml
+
+# ===== Node (if examples include any JS) =====
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===== Python venv =====
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# ===== OS =====
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===== Test artifacts =====
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
